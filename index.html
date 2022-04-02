@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pagoso</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="icon" href="https://i.postimg.cc/4ycXQ0nv/icono-flork.png">
+</head>
+<body>
+    <header>
+        <div class="pagoso-title">
+            <h1>- Pagoso -</h1>
+        </div>
+    </header>
+    <main>
+        <div class="div-clash">
+            <a href="https://statsroyale.com/es/profile/JPC9JQJYU" class="perfil">Preciona aqui</a>
+            <ion-icon name="chevron-back-outline" class="precionaqui"></ion-icon>
+            <br> <hr class="hr"><br>
+            <img src="https://i.postimg.cc/sxNDG2CX/clash.png" class="imagen-mazo">
+        </div>
+        <section class="seccion-fotos_main">
+            <div class="contenedor-fotos">
+                <div class="foto-div">
+                    <img src="https://i.postimg.cc/15m0ZmHq/Captura.png" class="qr" title="no escanees">
+                </div>
+            </div>
+        </section>
+        <section class="video">
+            <br>
+            <div class="thevideos">
+            <video src="Multimedia/798f2c07938273f4c34ea34f3f5c52f8.mp4" width="100%" id="myvideo"></video>
+                <div class="txt-video">
+                    <button onclick="vidPlay()">&#9658;</button>
+                </div>
+            </div>
+            <video autoplay controls src="Multimedia/bb67b1a0a0766e892b2a2a14bde1dc01.mp4" width="100%" id="myvideo"></video>
+            <div class="txt-video">
+                <button onclick="vidPlay()">&#9658;</button>
+            </div>
+        </div>
+        </div>
+        </section>
+    </main>
+    <script>
+        var theVideo = document.getElementById('myvideo'),
+            theTxt = document.querySelector('.txt-cont');
+        
+        function vidPlay(){
+            theVideo.play();
+            theVideo.setAttribute('controls', 'controls');
+            theTxt.style.opacity = "0";
+            theTxt.style.transition = "all .5s";
+            the.style.display = "none";
+        }
+        theVideo.onended = function(){
+            theTxt.style.opacity = "1";
+            theTxt.style.transition = "all .5s";
+            theTxt.style.display = "block";
+            theVideo.load();
+            theVideo.controls = false;
+        };
+    </script>
+</body>
+</html>
